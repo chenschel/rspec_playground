@@ -41,6 +41,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rubocop', '~> 0.55.0'
+  gem 'pry-byebug'
+  gem 'pry-rails'
 end
 
 group :development do
