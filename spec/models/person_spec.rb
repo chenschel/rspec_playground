@@ -11,4 +11,12 @@ RSpec.describe Person, type: :model do
     # expect(person).to_not receive(:first_name)
     expect(person.full_name).to eq('John Denver')
   end
+
+  context 'has gender set' do
+    let(:male) { create(:person_male) }
+
+    it '#gemder' do
+      expect(male.gender).to eq('male')
+    end
+  end
 end
